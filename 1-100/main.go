@@ -14,6 +14,8 @@ func main() {
     Run("Problem 3: Largest Prime Factor", "Largest Prime Factor for 600851475143: %d", func() int { return LargestPrimeFactor(600851475143) })
 
     Run("Problem 4: Largest Palindrome Product", "Largest Palindrome for 3 digit product: %d", func() int { return LargestPalindromeProduct(3) })
+
+    Run("Problem 5: Smallest Multiple", "Smallest multiple for 20: %d", func() int { return SmallestMultiple(20) })
 }
 
 func Run(title, description string, f FuncInt) {
