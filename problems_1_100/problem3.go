@@ -1,4 +1,14 @@
-package main
+package problems_1_100
+
+import "euler/globals"
+
+func init() {
+    globals.ReflectionLookup[3] = globals.ReflectionItem{Title: "Largest Prime Factor", Function: Problem3}
+}
+
+func Problem3(params []int) int {
+    return LargestPrimeFactor(params[0])
+}
 
 func LargestPrimeFactor(number int) int {
     if IsPrime(number) {

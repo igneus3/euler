@@ -1,4 +1,14 @@
-package main
+package problems_1_100
+
+import "euler/globals"
+
+func init() {
+    globals.ReflectionLookup[2] = globals.ReflectionItem{Title: "Even Fibonacci Numbers", Function: Problem2}
+}
+
+func Problem2(params []int) int {
+    return EvenFibonacciNumbers(params[0])
+}
 
 func EvenFibonacciNumbers(number int) int {
     prevOne, prevTwo := 1, 1

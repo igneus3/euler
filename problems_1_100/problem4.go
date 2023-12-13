@@ -1,8 +1,17 @@
-package main
+package problems_1_100
 
 import (
+	"euler/globals"
 	"math"
 )
+
+func init() {
+    globals.ReflectionLookup[4] = globals.ReflectionItem{Title: "Largest Palindrome Product", Function: Problem4}
+}
+
+func Problem4(params []int) int {
+    return LargestPalindromeProduct(params[0])
+}
 
 func LargestPalindromeProduct(digits int) int {
     maxDigitNumber := int(math.Pow(10, float64(digits)) - 1)

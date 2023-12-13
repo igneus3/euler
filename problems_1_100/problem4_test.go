@@ -1,4 +1,4 @@
-package main
+package problems_1_100
 
 import (
 	"fmt"
@@ -12,6 +12,7 @@ func TestLargestPalindromeProduct(tt *testing.T) {
     }{
         {1, 9},
         {2, 9009},
+        {3, 906609},
     }
 
     for _, test := range tests {

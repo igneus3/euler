@@ -1,4 +1,14 @@
-package main
+package problems_1_100
+
+import "euler/globals"
+
+func init() {
+    globals.ReflectionLookup[5] = globals.ReflectionItem{Title: "Smallest Multiple", Function: Problem5}
+}
+
+func Problem5(params []int) int {
+    return SmallestMultiple(params[0])
+}
 
 func SmallestMultiple(number int) int {
     if number == 1 {
